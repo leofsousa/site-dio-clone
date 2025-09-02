@@ -1,8 +1,15 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Home } from "./pages/home";
+import { Login } from "./pages/login";
+
 function App() {
   return (
-    <div className="App">
-     Olá Mundo
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
