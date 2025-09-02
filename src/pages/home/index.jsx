@@ -6,9 +6,6 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Button title='Teste 1' />
-      <Button variant="secondary" title='teste 2' />
-      <Link to="/login">Fazer Login</Link>
     </>
   );
 };
