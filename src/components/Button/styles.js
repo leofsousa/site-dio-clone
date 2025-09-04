@@ -15,10 +15,15 @@ export const ButtonContainer = styled.button`
         height: 33px;
 
         background: #E4105D;
+&:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
         &::after {
             content: '';
+            border: 1px solid #e4105d;
             position: absolute;
-            border: 1px solid #E4105D;
             top: -5px;
             left: -6px;
             width: calc(100% + 10px);
