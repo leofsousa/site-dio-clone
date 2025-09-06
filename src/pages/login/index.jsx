@@ -13,8 +13,15 @@ import {
   SubtitleLogin,
 } from "./styles";
 import { Input } from "../../components/Input";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const navigate = useNavigate();
+
+  const handleClickSignIn = () => {
+    navigate('/feed')
+  }
+
   return (
     <>
       <Header />
@@ -32,7 +39,7 @@ const Login = () => {
             <form>
               <Input placeholder="Email" leftIcon={<MdEmail/>} />
               <Input placeholder="Senha" type="password" leftIcon={<MdLock />}/>
-              <Button title="Entrar" variant="secondary"></Button>
+              <Button title="Entrar" variant="secondary" onClick={handleClickSignIn} type="button"></Button>
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha</EsqueciText>
