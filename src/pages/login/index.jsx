@@ -35,8 +35,6 @@ const Login = () => {
     formState: { errors, isValid },
   } = useForm({ resolver: yupResolver(schema), mode: "onChange" });
 
-  console.log(isValid, errors);
-
   const onSubmit = (data) => console.log(data);
 
   const handleClickSignIn = () => {
