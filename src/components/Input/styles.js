@@ -1,24 +1,29 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const InputContainer = styled.div`
-    max-width: 275px;
-    width: 100%;
-    height: 30px;
-    border: 1px solid #3b3450;
+  max-width: 275px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #3b3450;
 
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`;
 export const IconContainer = styled.div`
-    margin: 0 10px;
-    
-`
+  margin: 0 10px;
+`;
+export const ErrorText = styled.p`
+  color: #ff0000;
+  font-size: 12px;
+  margin: 5px 0;
+  
+`;
 
 export const InputText = styled.input`
-    background-color: transparent;
-    color: #FFFFFF;
-    width: 100%;
-    border: 0;
-    height: 30px;
-`
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  border: 0;
+  height: 30px;
+`;
