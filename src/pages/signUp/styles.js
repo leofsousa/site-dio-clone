@@ -27,6 +27,7 @@ export const Wrapper = styled.div`
 
 export const Column = styled.div`
   flex-direction: column;
+  justify-content: space-around;
 `;
 export const Row = styled.div`
   flex-direction: row;
@@ -53,4 +54,27 @@ export const SubtitleLogin = styled.p`
   font-size: 18px;
   margin-bottom: 35px;
   line-height: 25px;
+`;
+export const TermoText = styled.p`
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  line-height: 25px;
+`;
+export const LoginText = styled.p`
+  font-family: "Open Sans";
+
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  margin-bottom: 35px;
+  line-height: 25px;
+  margin-top: 20px;
+  a {
+    color: #23dd7a;
+    text-decoration: none;
+  }
 `;
