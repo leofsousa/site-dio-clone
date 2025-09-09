@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
+  padding-top: 50px;
 
   display: flex;
   flex-direction: row;
@@ -30,9 +31,9 @@ export const Column = styled.div`
 export const Row = styled.div`
   flex-direction: row;
   display: flex;
-    margin-top: 20px;
-    align-items: center;
-    justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const TitleLogin = styled.h3`
