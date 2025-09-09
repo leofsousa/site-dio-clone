@@ -6,7 +6,7 @@ export const api = axios.create({
 
 export const cadastrarUsuario = async (dados) => {
   try {
-    const response = await api.post("/user", dados);
+    const response = await api.post("/users", dados);
     return response.data;
   } catch (error) {
     console.error("Erro ao cadastrar usuário:", error);

@@ -4,7 +4,6 @@ import {
   Container,
   Title,
   Column,
-  Row,
   Wrapper,
   TitleLogin,
   SubtitleLogin,
@@ -22,16 +21,23 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const handleClickLogin = () => {
-        navigate("/login");
+    navigate("/login");
   };
-  const { control, handleSubmit } = useForm();
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
   const onSubmit = async (data) => {
     try {
-      const newUser = await cadastrarUsuario({
+      await cadastrarUsuario({
         nome: data.nome,
         email: data.email,
         senha: data.password,
       });
+      alert("Usuário cadastrado com sucesso!");
+      navigate("/login");
     } catch {
       alert("Erro ao cadastrar usuário");
     }
@@ -56,12 +62,14 @@ const SignUp = () => {
                 control={control}
                 placeholder="Nome Completo"
                 leftIcon={<MdPerson />}
+                errorMessage={errors.nome && "Nome é obrigatório"}
               />
               <Input
                 name="email"
                 control={control}
                 placeholder="Email"
                 leftIcon={<MdEmail />}
+                errorMessage={errors.email && "Email é obrigatório"}
               />
               <Input
                 name="password"
@@ -69,6 +77,7 @@ const SignUp = () => {
                 placeholder="Senha"
                 type="password"
                 leftIcon={<MdLock />}
+                errorMessage={errors.password && "Senha é obrigatório"}
               />
               <Button title="Cadastrar" variant="secondary" type="submit" />
             </form>
