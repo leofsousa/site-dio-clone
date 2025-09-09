@@ -11,12 +11,15 @@ O objetivo do projeto é praticar conceitos como:\
 
 ------------------------------------------------------------------------
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias Utilizadas  
 
--   [React](https://react.dev/)\
--   [React Router DOM](https://reactrouter.com/)\
--   [Styled-Components](https://styled-components.com/)\
--   [Vercel](https://vercel.com/) -- Deploy
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)  
+![Styled-Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)  
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)  
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)  
+![JSON Server](https://img.shields.io/badge/JSON%20Server-323330?style=for-the-badge&logo=json&logoColor=yellow)  
+
 
 ------------------------------------------------------------------------
 
