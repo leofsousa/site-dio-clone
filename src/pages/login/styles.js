@@ -13,21 +13,21 @@ export const Container = styled.main`
 `;
 export const Wrapper = styled.div`
   max-width: 300px;
-`
+`;
 export const ErrorText = styled.p`
   color: #ff0000;
   font-size: 12px;
-`
+`;
 export const Column = styled.div`
   flex: 1;
-`
+`;
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-`
+`;
 
 export const Title = styled.h2`
   font-family: "Open Sans";
