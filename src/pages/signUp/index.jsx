@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Header } from "../../components/Header";
 import {
@@ -32,7 +33,7 @@ const SignUp = () => {
   const onSubmit = async (data) => {
     try {
       await cadastrarUsuario({
-        nome: data.nome,
+        name: data.nome,
         email: data.email,
         senha: data.password,
       });
